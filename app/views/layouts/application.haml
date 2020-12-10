@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %meta{ charset: 'utf-8' }
+    %meta{ content: 'width=device-width, initial-scale=1, maximum-scale=1, minimal-ui', name: 'viewport' }
+    %meta{ content: 'IE=edge', 'http-equiv' => 'X-UA-Compatible' }
+
+    %title Minesweeper
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+
+  %body
+    = yield

@@ -1,0 +1,16 @@
+#main
+  %h2 Чат
+
+  #chat_body
+    #messages
+
+    %form#send_message
+      %input{ type: "text", id: "message", name: "message" }
+      %button Отправить
+
+  #modal
+    .div
+      %h4 Имя
+      %form#set_name
+        %input{ type: "text", id: "add_name", name: "add_name" }
+        %button Отправить
